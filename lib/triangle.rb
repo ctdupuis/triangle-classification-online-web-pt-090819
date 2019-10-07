@@ -13,5 +13,8 @@ class Triangle
   
   class TriangleError < StandardError
     
+    def message
+      "This Triangle is illegal."
+    end
   end
 end
