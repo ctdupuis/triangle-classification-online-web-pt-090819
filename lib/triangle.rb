@@ -12,8 +12,12 @@ class Triangle
   end
   
   def valid_triangle
-    triangle = [(a+b<c)]
+    triangle = [(a + b > c), (a + c > b), (b + c > a)]
+    triangle.each do |side|
+      
+    end
   end
+  
   class TriangleError < StandardError
     
     def message
