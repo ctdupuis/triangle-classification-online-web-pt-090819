@@ -11,7 +11,11 @@ class Triangle
     valid_triangle
     if a == b && b == c 
       :equilateral
-    elsif 
+    elsif a == b || b == c || a == c 
+      :isosceles
+    else
+      :scalene
+    end
   end
   
   def valid_triangle
