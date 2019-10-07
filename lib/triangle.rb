@@ -1,7 +1,7 @@
 class Triangle
   attr_accessor :a, :b, :c
   
-  def initialize(a, b, c )
+  def initialize(a, b, c)
    @a = a
    @b = b 
    @c = c 
@@ -13,8 +13,8 @@ class Triangle
   
   def valid_triangle
     triangle = [(a + b > c), (a + c > b), (b + c > a)]
-    triangle.each do |side|
-      
+    [a, b, c].each do |side|
+      triangle << false if side <= 0 
     end
   end
   
