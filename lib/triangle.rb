@@ -10,6 +10,8 @@ class Triangle
   def kind 
     valid_triangle
     if a == b && b == c 
+      :equilateral
+    elsif 
   end
   
   def valid_triangle
